@@ -1,0 +1,33 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  position: sticky;
+  top:0;
+}
+
+.headerLogo {
+  height: 2rem;
+  object-fit: contain;
+}
+
+.searchBtn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2px;
+}
+
+.headerSearchBar {
+  display: flex;
+}
+
+@media only screen and (min-width: 480px) {
+  .headerContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

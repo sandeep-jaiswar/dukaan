@@ -1,0 +1,41 @@
+.userDetailsOnHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.ownerDetails {
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.userDetails {
+  display: flex;
+  flex-basis: auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.track-order {
+  display: flex;
+  flex-basis: auto;
+}
+
+.ownerDetails > * {
+  margin-right: 2rem;
+}
+
+.userDetails > * {
+  margin-left: 2rem;
+}
+
+.user-nav-with-name {
+  cursor: pointer;
+}
