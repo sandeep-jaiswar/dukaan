@@ -2,6 +2,7 @@ import React from "react";
 import CustomNavbar from "../../components/CustomNavbar";
 import CustomSlider from "../../components/CustomSlider";
 import Header from "../../components/Header";
+import PageCard from "../../components/PageCard";
 import UserDetailsOnHeader from "../../components/UserDetailsOnHeader";
 
 import "./index.css";

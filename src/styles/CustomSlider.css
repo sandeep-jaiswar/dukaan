@@ -1,0 +1,47 @@
+.slider-img{
+  height: 80vh;
+  min-width: 100%;
+}
+
+.img-slider{
+  position: relative;
+  margin: 1rem auto;
+  transition: left 8s ;
+}
+
+.img-slider ::after{
+  content: '';
+  display: block;
+  height: 80vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img-slider-wrapper{
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  position: absolute;
+  column-gap: 50px;
+  transition: all 2s ;
+}
+
+.slider-left-icon{
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 2;
+}
+
+.slider-right-icon{
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  z-index: 2;
+}
