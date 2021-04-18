@@ -1,0 +1,26 @@
+.categoryCardContainer{
+  display: flex;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  margin: 0 0 1.5rem;
+  position: relative;
+}
+
+.categoryCard{
+  padding: 1.5rem;
+    border-radius: 16px;
+    background: linear-gradient(
+85deg
+,#434343,#262626);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    margin: 0;
+}
+
+.categordCardImg{
+  width: 15rem;
+  height: 15rem;
+  object-fit: contain;
+}

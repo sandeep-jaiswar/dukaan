@@ -1,3 +1,53 @@
 .home{
   margin: 0 1rem;
 }
+
+.nav-pages{
+  position: relative;
+  height: 800vh;
+}
+
+.nav-pages > *{
+  margin: 0 0 5vh 0;
+  width: 100%;
+}
+
+.navpage1{
+  position: absolute;
+  top: 0;
+}
+
+.navpage2{
+  position: absolute;
+  top: 12%;
+  display: flex;
+  column-gap: 1rem;
+}
+
+.navpage3{
+  position: absolute;
+  top: 24%;
+  display: flex;
+  column-gap: 1rem;
+}
+
+.navpage4{
+  position: absolute;
+  top: 36%;
+  display: flex;
+  column-gap: 1rem;
+}
+
+.navpage5{
+  position: absolute;
+  top: 48%;
+  display: flex;
+  column-gap: 1rem;
+}
+
+.navpage6{
+  position: absolute;
+  top: 60%;
+  display: flex;
+  column-gap: 1rem;
+}

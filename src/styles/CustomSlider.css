@@ -6,6 +6,7 @@
 .img-slider{
   position: relative;
   margin: 1rem auto;
+  height: 80vh;
   transition: left 8s ;
 }
 
