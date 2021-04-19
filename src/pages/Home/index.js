@@ -32,7 +32,7 @@ const Home = () => {
             <CustomSlider />
           </div>
           <div className='navpage2'>
-            <PageCard state={{title:'',arr : electronicsProductsArr}} />
+            <PageCard state={{title:'Trending',arr : electronicsProductsArr}} />
           </div>
           <div className='navpage3'>
             <PageCard state={{title:'Clothes',arr : clothesProductsArr}} />

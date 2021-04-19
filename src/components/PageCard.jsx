@@ -6,7 +6,7 @@ export default function PageCard(props) {
   return (
     <div className="pageCard">
       <div className="titleHeader titleCard">
-        {props.state.title}
+        <div className="pageCardTitle">{props.state.title}</div>
       </div>
       <CategoryCard state={props.state.arr} />
     </div>

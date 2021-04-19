@@ -7,7 +7,9 @@ function CategoryCard(props) {
       {props.state.map((single, index) => (
         <div className="categoryCard">
           <img className='categordCardImg' src={single.image} />
-          <h4>{single.title}</h4>
+          <div className='categoryTitle'>
+            {single.title.length<30 ? single.title : `${single.title.slice(0,12)}...`}
+          </div>
         </div>
       ))}
     </div>
