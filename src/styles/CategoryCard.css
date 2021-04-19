@@ -17,8 +17,8 @@
   flex-direction: column;
   transition: .2s;
   margin: 0;
-  border: 1px solid black;
   position: relative;
+  background: ivory;
 }
 
 .categordCardImg{

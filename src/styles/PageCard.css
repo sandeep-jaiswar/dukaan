@@ -1,6 +1,6 @@
 .pageCard{
-  height: 80vh;
-  margin: 2rem 0;
+  height: 50vh;
+  margin: 1rem 0;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.03);
   cursor: pointer;
   border-radius: 0.5rem;

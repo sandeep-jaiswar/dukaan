@@ -5,6 +5,7 @@ import CustomSlider from "../../components/CustomSlider";
 import Header from "../../components/Header";
 import PageCard from "../../components/PageCard";
 import UserDetailsOnHeader from "../../components/UserDetailsOnHeader";
+import { getProductsFromFirestore, dataFromSnapshot } from '../../services/firestoreService';
 
 import "./index.css";
 
@@ -13,14 +14,21 @@ const Home = () => {
   const [clothesProductsArr,setClothesProductsArr]=useState([]);
   const [shoesProductsArr,setShoesProductsArr]=useState([]);
   const [mobileProductsArr,setMobileProductsArr]=useState([]);
-  useEffect(()=>{
-    axios.get('https://fakestoreapi.com/products').then(res=>{
-      setElectronicsProductsArr(res.data);
-      setClothesProductsArr(res.data);
-      setShoesProductsArr(res.data);
-      setMobileProductsArr(res.data);
-    })
-  },[]);
+
+  useEffect(() => {
+    const unsubscribe = getProductsFromFirestore({
+      next: snapshot => {
+        const data =  snapshot.docs.map(docSnapshot => dataFromSnapshot(docSnapshot));
+        setElectronicsProductsArr(data);
+      setClothesProductsArr(data);
+      setShoesProductsArr(data);
+      setMobileProductsArr(data);
+      },
+      error: error => console.log(error),
+    });
+    return unsubscribe;
+  }, [])
+
   return (
     <div className="home">
       <UserDetailsOnHeader />

@@ -9,10 +9,10 @@ const CustomNavbar = () => {
     <div className='customNavbar'>
       <div className="link">Link</div>
       <div className="link" onClick={() => moveScroll(680)}>Home</div>
-      <div className="link" onClick={() => moveScroll(1340)}>Clothes</div>
-      <div className="link" onClick={() => moveScroll(1960)}>Electronics</div>
-      <div className="link" onClick={() => moveScroll(2600)}>Shoes</div>
-      <div className="link" onClick={() => moveScroll(3230)}>Mobiles</div>
+      <div className="link" onClick={() => moveScroll(1030)}>Clothes</div>
+      <div className="link" onClick={() => moveScroll(1420)}>Electronics</div>
+      <div className="link" onClick={() => moveScroll(1800)}>Shoes</div>
+      <div className="link" onClick={() => moveScroll(2150)}>Mobiles</div>
     </div>
   );
 };
